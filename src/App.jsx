@@ -1,8 +1,15 @@
+import GlobalStyles from "./components/styles/Global";
+import Header from "./components/Header";
+
 function App() {
   return (
-    <div>
-      <h1>Ready</h1>
-    </div>
+    <>
+      <GlobalStyles />
+      <Header />
+      <div>
+        <h1>Ready</h1>
+      </div>
+    </>
   );
 }
 
