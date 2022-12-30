@@ -19,4 +19,13 @@ export const StyledButton = styled.a`
     color: #888;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 0.2rem 0.6rem;
   }
+
+  ${(props) =>
+    props.primary &&
+    `
+      background: hsl(322, 100%, 66%);
+      color: #fff;
+      padding: 1rem 5.6rem;
+      align-self: flex-start
+    `}
 `;

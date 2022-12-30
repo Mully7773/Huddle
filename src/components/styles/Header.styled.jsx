@@ -10,18 +10,17 @@ export const StyledHeader = styled.header`
     url(public/bg-hero-desktop.svg);
   background-size: contain;
   background-position: center;
-  padding: 4rem;
+  padding: 4rem 6rem;
   display: grid;
   grid-template-rows: 6rem min-content;
-  /* grid-template-columns: 40% 60%; */
-
+  grid-template-columns: repeat(12, 1fr);
   svg {
     height: 2.8rem;
     width: 2.8rem;
     margin-right: 0.5rem;
   }
 
-  h1 {
+  & h1 {
     color: ${({ theme }) => theme.color.footer};
     display: inline-block;
     font-size: 2.8rem;
