@@ -13,9 +13,10 @@ export const StyledHeader = styled.header`
   display: grid;
   grid-template-rows: 6rem min-content;
   grid-template-columns: repeat(12, 1fr);
+  row-gap: 2.8rem;
   svg {
-    height: 2.8rem;
-    width: 2.8rem;
+    height: 3.2rem;
+    width: 3.2rem;
     margin-right: 0.5rem;
     fill: ${({ theme }) => theme.color.primary};
   }
@@ -24,6 +25,6 @@ export const StyledHeader = styled.header`
     font-family: ${({ theme }) => theme.font.headings};
     color: ${({ theme }) => theme.color.footer};
     display: inline-block;
-    font-size: 2.8rem;
+    font-size: 3.2rem;
   }
 `;

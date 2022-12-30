@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const StyledButton = styled.a`
   display: inline-block;
@@ -22,10 +22,16 @@ export const StyledButton = styled.a`
 
   ${(props) =>
     props.primary &&
-    `
+    css`
       background: hsl(322, 100%, 66%);
       color: #fff;
       padding: 1rem 5.6rem;
-      align-self: flex-start
+      align-self: flex-start;
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 0.4rem 1.2rem;
+
+      :hover {
+        background: #f57bc8;
+        color: #eee;
+      }
     `}
 `;

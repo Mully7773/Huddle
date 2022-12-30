@@ -23,21 +23,23 @@ const StyledHeroText = styled.div`
     font-weight: 600;
     color: #000;
     line-height: 1.4;
-    font-size: 3.2rem;
+    font-size: 4rem;
   }
 
   p {
-    font-size: 1.4rem;
+    font-size: 1.8rem;
     font-weight: 400;
   }
 `;
 
 const StyledHeroImages = styled.div`
+  /* background-color: blue; */
   grid-column: 6 / -1;
-  background-color: blueviolet;
+  /* justify-content: flex-end; */
 
   img {
     width: 100%;
+    height: 100%;
   }
 `;
 
