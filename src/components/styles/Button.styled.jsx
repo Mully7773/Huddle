@@ -9,7 +9,7 @@ export const StyledButton = styled.a`
   font-size: 1.4rem;
   font-weight: 600;
   cursor: pointer;
-  font-family: "Poppins", sans-serif;
+  font-family: ${({ theme }) => theme.font.bodyCTA};
   /* box-shadow: 0 4rem 6rem rgba(0, 0, 0, 0.09); */
   box-shadow: rgba(0, 0, 0, 0.1) 0px 0.4rem 1.2rem;
   transition: all 0.3s;

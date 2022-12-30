@@ -20,7 +20,7 @@ const GlobalStyles = createGlobalStyle`
     }
 
     body {
-        font-family: var(--font-primary);
+        font-family: var(--font-secondary);
         line-height: 1.6;
         font-weight: 300;
     }

@@ -10,6 +10,13 @@ const theme = {
     header: "#ebfbff",
     body: "#fff",
     footer: "#003333",
+    primary: "#ff52bf",
+    secondary: "#003333",
+  },
+
+  font: {
+    headings: "'Poppins', sans-serif",
+    bodyCTA: "'Open Sans', sans-serif",
   },
 };
 

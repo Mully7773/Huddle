@@ -16,7 +16,7 @@ const StyledHeroText = styled.div`
   flex-direction: column;
   gap: 1.8rem;
   grid-column: 1 / 6;
-  background-color: coral;
+  /* background-color: coral; */
   padding-right: 5rem;
   justify-content: center;
   h1 {
@@ -27,7 +27,7 @@ const StyledHeroText = styled.div`
   }
 
   p {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     font-weight: 400;
   }
 `;
