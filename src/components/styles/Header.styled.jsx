@@ -6,10 +6,10 @@ export const StyledHeader = styled.header`
       rgba(235, 251, 255, 0.3),
       rgba(235, 251, 255, 0.3)
     ),
-    url(public/bg-hero-desktop.svg);
+    url(/bg-hero-desktop.svg);
   background-size: contain;
   background-position: center;
-  padding: 4rem 6rem;
+  padding: 4rem 8rem;
   display: grid;
   grid-template-rows: 6rem min-content;
   grid-template-columns: repeat(12, 1fr);

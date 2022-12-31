@@ -40,6 +40,8 @@ const StyledHeroImages = styled.div`
   img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
+    display: block;
   }
 `;
 
@@ -67,7 +69,7 @@ const Header = () => {
         <StyledButton primary>Get Started For Free</StyledButton>
       </StyledHeroText>
       <StyledHeroImages>
-        <img src="public/illustration-mockups.svg" />
+        <img src="/illustration-mockups.svg" />
       </StyledHeroImages>
     </StyledHeader>
   );
