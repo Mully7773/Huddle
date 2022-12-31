@@ -1,9 +1,10 @@
+import Feature from "./Feature";
 import { StyledFeatures } from "./styles/Features.styled";
 
 const Features = () => {
   return (
     <StyledFeatures>
-      <div>Features</div>
+      <Feature />
     </StyledFeatures>
   );
 };

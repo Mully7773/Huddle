@@ -12,6 +12,7 @@ const theme = {
     footer: "#003333",
     primary: "#ff52bf",
     secondary: "#003333",
+    paragraphCard: "#808d99",
   },
 
   font: {
