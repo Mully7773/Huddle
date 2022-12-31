@@ -1,6 +1,7 @@
 import { StyledFeature } from "./styles/Feature.styled";
 import { cardData } from "../cardData";
 import styled from "styled-components";
+import { css } from "styled-components";
 
 const StyledFeatureText = styled.div`
   display: flex;
@@ -9,6 +10,14 @@ const StyledFeatureText = styled.div`
   justify-content: center;
   grid-column: 1 / 7;
   padding: 0 0 0 5rem;
+
+  ${(props) =>
+    props.alternate &&
+    css`
+      grid-column: 8 / -1;
+      padding: 0;
+    `}
+
   & h2 {
     font-family: ${({ theme }) => theme.font.headings};
     color: #000;
@@ -29,15 +38,23 @@ const StyledFeatureImage = styled.img`
   display: block;
   grid-column: 8 / -1;
   padding: 2rem;
+
+  ${(props) =>
+    props.alternate &&
+    css`
+      grid-column: 1 / 7;
+      grid-row: 1 / 2;
+      padding-left: 5rem;
+    `}
 `;
 const Feature = () => {
-  const featureList = cardData.map((feature) => (
+  const featureList = cardData.map((feature, index) => (
     <StyledFeature key={feature.id}>
-      <StyledFeatureText>
+      <StyledFeatureText alternate={index % 2 !== 0}>
         <h2>{feature.cardHeading}</h2>
         <p>{feature.cardText}</p>
       </StyledFeatureText>
-      <StyledFeatureImage src={feature.cardImg} />
+      <StyledFeatureImage alternate={index % 2 !== 0} src={feature.cardImg} />
     </StyledFeature>
   ));
 
