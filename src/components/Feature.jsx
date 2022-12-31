@@ -8,16 +8,16 @@ const StyledFeatureText = styled.div`
   gap: 1.2rem;
   justify-content: center;
   grid-column: 1 / 7;
-  padding: 0 5rem;
+  padding: 0 0 0 5rem;
   & h2 {
     font-family: ${({ theme }) => theme.font.headings};
     color: #000;
-    font-size: 2.4rem;
+    font-size: 2.6rem;
   }
 
   & p {
     font-family: ${({ theme }) => theme.font.bodyCTA};
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     color: ${({ theme }) => theme.color.paragraphCard};
   }
 `;
@@ -28,6 +28,7 @@ const StyledFeatureImage = styled.img`
   object-fit: cover;
   display: block;
   grid-column: 8 / -1;
+  padding: 2rem;
 `;
 const Feature = () => {
   const featureList = cardData.map((feature) => (
