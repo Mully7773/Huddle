@@ -11,6 +11,10 @@ const StyledCTAContainer = styled.section`
   padding: 6rem;
   border-radius: ${({ theme }) => theme.borderRadius.cards};
   box-shadow: rgba(0, 0, 0, 0.15) 0px 0.4rem 1.2rem;
+  transform: translateY(35%);
+  z-index: 9999;
+  position: relative;
+  background-color: #fff;
 
   h2 {
     font-size: 3.2rem;

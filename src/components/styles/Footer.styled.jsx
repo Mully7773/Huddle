@@ -11,8 +11,7 @@ export const StyledFooter = styled.footer`
   grid-template-rows: min-content 1fr;
   column-gap: 13rem;
   row-gap: 2.8rem;
-  padding-top: 10rem;
-  padding-bottom: 6rem;
-  padding-left: 15rem;
-  padding-right: 2rem;
+  padding: 12rem 2rem 6rem 15rem;
+  position: relative;
+  z-index: 1;
 `;

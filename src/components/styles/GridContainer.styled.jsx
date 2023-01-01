@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const StyledGridContainer = styled.div`
   display: grid;
-  grid-template-rows: 100vh min-content min-content;
+  grid-template-rows: 100vh min-content min-content min-content;
   grid-template-columns:
     [full-start] minmax(4rem, 1fr) [center-start] repeat(
       10,
