@@ -2,6 +2,10 @@ import styled from "styled-components";
 import Logo, { StyledLogoHeading, StyledLogoSVG } from "./Logo";
 import { StyledFooter } from "./styles/Footer.styled";
 
+const FooterLogoContainer = styled.div`
+  grid-column: 2 / 8;
+`;
+
 const ContactInfoGrid = styled.div`
   grid-column: 2 / 4;
   display: grid;
@@ -41,17 +45,31 @@ const ContactInfoGrid = styled.div`
   }
 `;
 
+const NavigationLinks = styled.ul`
+  grid-column: 4 / 6;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  & li {
+    list-style: none;
+  }
+  & li a {
+    text-decoration: none;
+    color: #fff;
+  }
+`;
+
 const Footer = () => {
   return (
     <StyledFooter>
+      <FooterLogoContainer>
+        <StyledLogoSVG inputSize="2.8rem">
+          {" "}
+          <use href="/sprite.svg#icon-commenting-o"></use>
+        </StyledLogoSVG>
+        <StyledLogoHeading inputSize="2.8rem">Huddle</StyledLogoHeading>
+      </FooterLogoContainer>
       <ContactInfoGrid>
-        <div>
-          <StyledLogoSVG inputSize="2.8rem">
-            {" "}
-            <use href="/sprite.svg#icon-commenting-o"></use>
-          </StyledLogoSVG>
-          <StyledLogoHeading inputSize="2.8rem">Huddle</StyledLogoHeading>
-        </div>
         <svg className="footer-svg">
           <use href="/sprite.svg#icon-location-pin"></use>
         </svg>
@@ -72,7 +90,26 @@ const Footer = () => {
           <a href="mailto:example@huddle.com">example@huddle.com</a>
         </p>
       </ContactInfoGrid>
-      <div>Contacts</div>
+      <NavigationLinks>
+        <li>
+          <a href="#">About Us</a>
+        </li>
+        <li>
+          <a href="#">Career</a>
+        </li>
+        <li>
+          <a href="#">What We Do</a>
+        </li>
+        <li>
+          <a href="#">Blog</a>
+        </li>
+        <li>
+          <a href="#">FAQ</a>
+        </li>
+        <li>
+          <a href="#">Contact Us</a>
+        </li>
+      </NavigationLinks>
       <div>Links</div>
     </StyledFooter>
   );
