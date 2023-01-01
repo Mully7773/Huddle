@@ -49,6 +49,8 @@ const NavigationLinks = styled.ul`
   grid-column: 4 / 6;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, min-content);
+  row-gap: 0.8rem;
 
   & li {
     list-style: none;
@@ -56,6 +58,46 @@ const NavigationLinks = styled.ul`
   & li a {
     text-decoration: none;
     color: #fff;
+    transition: all 0.2s;
+  }
+
+  & a:visited,
+  a:link {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  & li a:hover {
+    text-decoration: underline;
+    color: ${({ theme }) => theme.color.primary};
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+`;
+
+const FooterSocials = styled.div`
+  grid-column: 6 / 8;
+
+  & div {
+    display: flex;
+    gap: 1.2rem;
+  }
+
+  & svg {
+    display: inline-block;
+    padding: 0.5rem 0.6rem;
+    box-shadow: 0px 0 2px 1px #fff;
+    /* border: 1.5px solid blue; */
+    border-radius: 50%;
+    height: 2.6rem;
+    width: 2.6rem;
+    fill: #fff;
+    cursor: pointer;
+
+    &:hover {
+      fill: ${({ theme }) => theme.color.primary};
+      box-shadow: 0px 0 2px 1px ${({ theme }) => theme.color.primary};
+    }
   }
 `;
 
@@ -110,7 +152,25 @@ const Footer = () => {
           <a href="#">Contact Us</a>
         </li>
       </NavigationLinks>
-      <div>Links</div>
+      <FooterSocials>
+        <div>
+          <a href="#">
+            <svg>
+              <use href="/sprite.svg#icon-facebook"></use>
+            </svg>
+          </a>
+          <a href="#">
+            <svg>
+              <use href="/sprite.svg#icon-twitter"></use>
+            </svg>
+          </a>
+          <a href="#">
+            <svg>
+              <use href="/sprite.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </div>
+      </FooterSocials>
     </StyledFooter>
   );
 };
