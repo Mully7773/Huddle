@@ -29,6 +29,15 @@ const ContactInfoGrid = styled.div`
   & a:link {
     text-decoration: none;
     color: #fff;
+    transition: all 0.2s;
+  }
+  & a:visited {
+    text-decoration: none;
+    color: #fff;
+  }
+  & a:hover {
+    text-decoration: underline;
+    color: ${({ theme }) => theme.color.primary};
   }
 `;
 

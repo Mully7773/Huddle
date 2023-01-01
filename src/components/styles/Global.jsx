@@ -24,6 +24,11 @@ const GlobalStyles = createGlobalStyle`
         line-height: 1.6;
         font-weight: 300;
     }
+
+    ::selection {
+        color: #fff;
+        background-color: ${({ theme }) => theme.color.primary};
+    }
 `;
 
 export default GlobalStyles;

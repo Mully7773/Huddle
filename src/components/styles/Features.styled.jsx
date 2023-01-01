@@ -8,4 +8,5 @@ export const StyledFeatures = styled.section`
   display: grid;
   grid-template-columns: repeat(auto-fit, 1fr);
   gap: 6rem;
+  padding-bottom: 12rem;
 `;

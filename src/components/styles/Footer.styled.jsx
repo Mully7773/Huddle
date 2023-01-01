@@ -7,4 +7,6 @@ export const StyledFooter = styled.footer`
 
   display: grid;
   grid-template-columns: repeat(8, 1fr);
+  padding-top: 10rem;
+  padding-bottom: 6rem;
 `;
