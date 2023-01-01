@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { StyledButton } from "./styles/Button.styled";
+import Logo from "./Logo";
 // import Button from "./Button";
 
 import { StyledHeader } from "./styles/Header.styled";
@@ -49,12 +50,7 @@ const Header = () => {
   return (
     <StyledHeader>
       <StyledToolbar>
-        <div>
-          <svg>
-            <use href="/sprite.svg#icon-commenting-o"></use>
-          </svg>
-          <h1>Huddle</h1>
-        </div>
+        <Logo />
         <div>
           <StyledButton>Try It Free</StyledButton>
         </div>
