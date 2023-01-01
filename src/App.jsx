@@ -4,6 +4,7 @@ import { ThemeProvider } from "styled-components";
 import GridContainer from "./components/GridContainer";
 import Features from "./components/Features";
 import Footer from "./components/Footer";
+import CallToAction from "./components/CallToAction";
 
 const theme = {
   color: {
@@ -19,6 +20,10 @@ const theme = {
     headings: "'Poppins', sans-serif",
     bodyCTA: "'Open Sans', sans-serif",
   },
+
+  borderRadius: {
+    cards: "1.6rem",
+  },
 };
 
 function App() {
@@ -28,6 +33,7 @@ function App() {
         <GlobalStyles />
         <Header />
         <Features />
+        <CallToAction />
         <Footer />
       </GridContainer>
     </ThemeProvider>
