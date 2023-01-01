@@ -77,7 +77,9 @@ const NavigationLinks = styled.ul`
 
 const FooterSocials = styled.div`
   grid-column: 6 / 8;
-
+  display: grid;
+  grid-template-rows: 1fr;
+  justify-content: space-between;
   & div {
     display: flex;
     gap: 1.2rem;
@@ -102,6 +104,7 @@ const FooterSocials = styled.div`
 `;
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
   return (
     <StyledFooter>
       <FooterLogoContainer>
@@ -170,6 +173,7 @@ const Footer = () => {
             </svg>
           </a>
         </div>
+        <p>&copy; Copyright {currentYear} Huddle. All rights reserved.</p>
       </FooterSocials>
     </StyledFooter>
   );
