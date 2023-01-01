@@ -11,6 +11,7 @@ export const StyledButton = styled.a`
   cursor: pointer;
   font-family: ${({ theme }) => theme.font.bodyCTA};
   /* box-shadow: 0 4rem 6rem rgba(0, 0, 0, 0.09); */
+
   box-shadow: rgba(0, 0, 0, 0.1) 0px 0.4rem 1.2rem;
   transition: all 0.3s;
 
@@ -27,6 +28,21 @@ export const StyledButton = styled.a`
       color: #fff;
       padding: 1rem 5.6rem;
       align-self: flex-start;
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 0.4rem 1.2rem;
+
+      :hover {
+        background: #f57bc8;
+        color: #eee;
+      }
+    `}
+
+  ${(props) =>
+    props.cta &&
+    css`
+      font-size: 1.8rem;
+      background: hsl(322, 100%, 66%);
+      color: #fff;
+      padding: 1.8rem 9.4rem;
       box-shadow: rgba(0, 0, 0, 0.25) 0px 0.4rem 1.2rem;
 
       :hover {
