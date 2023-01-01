@@ -3,11 +3,12 @@ import Logo, { StyledLogoHeading, StyledLogoSVG } from "./Logo";
 import { StyledFooter } from "./styles/Footer.styled";
 
 const FooterLogoContainer = styled.div`
-  grid-column: 2 / 8;
+  /* grid-column: 2 / 8; */
+  grid-column: 1 / -1;
 `;
 
 const ContactInfoGrid = styled.div`
-  grid-column: 2 / 4;
+  /* grid-column: 2 / 4; */
   display: grid;
   row-gap: 1.5rem;
   align-items: center;
@@ -46,11 +47,12 @@ const ContactInfoGrid = styled.div`
 `;
 
 const NavigationLinks = styled.ul`
-  grid-column: 4 / 6;
+  /* grid-column: 4 / 6; */
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  /* grid-template-columns: 1fr max-content; */
   grid-template-rows: repeat(3, min-content);
-  row-gap: 0.8rem;
+  row-gap: 1.8rem;
 
   & li {
     list-style: none;
@@ -59,6 +61,7 @@ const NavigationLinks = styled.ul`
     text-decoration: none;
     color: #fff;
     transition: all 0.2s;
+    font-size: 1.2rem;
   }
 
   & a:visited,
@@ -76,7 +79,7 @@ const NavigationLinks = styled.ul`
 `;
 
 const FooterSocials = styled.div`
-  grid-column: 6 / 8;
+  /* grid-column: 6 / 8; */
   display: grid;
   grid-template-rows: 1fr;
   justify-content: space-between;
