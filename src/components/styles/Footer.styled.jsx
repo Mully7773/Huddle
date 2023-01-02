@@ -14,4 +14,16 @@ export const StyledFooter = styled.footer`
   padding: 12rem 2rem 6rem 15rem;
   position: relative;
   z-index: 1;
+
+  @media only screen and (max-width: 59.375em) {
+    grid-template-columns: 1fr;
+    padding: 14rem 2rem 4rem 2rem;
+    row-gap: 3.6rem;
+  }
+
+  p {
+    @media only screen and (max-width: 59.375em) {
+      font-size: 1.6rem;
+    }
+  }
 `;

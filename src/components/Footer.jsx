@@ -54,6 +54,10 @@ const NavigationLinks = styled.ul`
   grid-template-rows: repeat(3, min-content);
   row-gap: 1.8rem;
 
+  @media only screen and (max-width: 59.375em) {
+    grid-template-columns: 1fr;
+  }
+
   & li {
     list-style: none;
   }
@@ -62,6 +66,9 @@ const NavigationLinks = styled.ul`
     color: #fff;
     transition: all 0.2s;
     font-size: 1.2rem;
+    @media only screen and (max-width: 59.375em) {
+      font-size: 1.8rem;
+    }
   }
 
   & a:visited,
@@ -83,9 +90,18 @@ const FooterSocials = styled.div`
   display: grid;
   grid-template-rows: 1fr;
   justify-content: space-between;
+
+  @media only screen and (max-width: 59.375em) {
+    justify-content: center;
+  }
   & div {
     display: flex;
     gap: 1.2rem;
+
+    @media only screen and (max-width: 59.375em) {
+      justify-content: center;
+      margin-bottom: 2.5rem;
+    }
   }
 
   & svg {
@@ -98,6 +114,10 @@ const FooterSocials = styled.div`
     width: 2.6rem;
     fill: #fff;
     cursor: pointer;
+    @media only screen and (max-width: 59.375em) {
+      height: 3.2rem;
+      width: 3.2rem;
+    }
 
     &:hover {
       fill: ${({ theme }) => theme.color.primary};
