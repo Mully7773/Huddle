@@ -29,6 +29,10 @@ export const StyledButton = styled.a`
       padding: 1rem 5.6rem;
       align-self: flex-start;
       box-shadow: rgba(0, 0, 0, 0.25) 0px 0.4rem 1.2rem;
+      @media only screen and (max-width: 59.375em) {
+        align-self: center;
+        width: 75%;
+      }
 
       :hover {
         background: #f57bc8;

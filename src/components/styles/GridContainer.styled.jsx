@@ -9,4 +9,8 @@ export const StyledGridContainer = styled.div`
       [col-start] minmax(min-content, 14rem) [col-end]
     )
     [center-end] minmax(4rem, 1fr) [full-end];
+
+  @media only screen and (max-width: 59.375em) {
+    grid-template-rows: min-content min-content min-content min-content;
+  }
 `;

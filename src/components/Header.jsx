@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import { StyledButton } from "./styles/Button.styled";
 import Logo from "./Logo";
-// import Button from "./Button";
 
 import { StyledHeader } from "./styles/Header.styled";
 
@@ -20,6 +19,14 @@ const StyledHeroText = styled.div`
   /* background-color: coral; */
   padding-right: 5rem;
   justify-content: center;
+
+  @media only screen and (max-width: 59.375em) {
+    grid-column: 1 / -1;
+    padding-right: 0;
+    padding-top: 4rem;
+    text-align: center;
+  }
+
   h1 {
     font-weight: 600;
     color: #000;
@@ -37,12 +44,20 @@ const StyledHeroImages = styled.div`
   /* background-color: blue; */
   grid-column: 6 / -1;
   /* justify-content: flex-end; */
+  @media only screen and (max-width: 59.375em) {
+    grid-column: 1 / -1;
+  }
 
   img {
-    width: 100%;
+    max-width: 100%;
+    /* width: 100%; */
     height: 100%;
     object-fit: cover;
     display: block;
+    @media only screen and (max-width: 59.375em) {
+      object-fit: contain;
+      padding-top: 4rem;
+    }
   }
 `;
 
