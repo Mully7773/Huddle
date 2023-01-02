@@ -9,4 +9,8 @@ export const StyledFeatures = styled.section`
   grid-template-columns: repeat(auto-fit, 1fr);
   gap: 6rem;
   padding-bottom: 5rem;
+  @media only screen and (max-width: 59.375em) {
+    grid-column: col-start 1 / center-end;
+    padding-bottom: 0;
+  }
 `;

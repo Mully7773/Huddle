@@ -16,10 +16,19 @@ const StyledCTAContainer = styled.section`
   position: relative;
   background-color: #fff;
 
+  @media only screen and (max-width: 59.375em) {
+    grid-column: col-start 1 / center-end;
+    padding: 6rem 3rem;
+  }
+
   h2 {
     font-size: 3.2rem;
     font-family: ${({ theme }) => theme.font.headings};
     font-weight: 600;
+    @media only screen and (max-width: 59.375em) {
+      padding-bottom: 2rem;
+      font-size: 3.4rem;
+    }
   }
 `;
 
