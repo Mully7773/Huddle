@@ -49,6 +49,16 @@ export const StyledButton = styled.a`
       padding: 1.8rem 9.4rem;
       box-shadow: rgba(0, 0, 0, 0.25) 0px 0.4rem 1.2rem;
 
+      @media only screen and (max-width: 36.875em) {
+        font-size: 1.4rem;
+        padding: 1.8rem 8rem;
+      }
+
+      @media only screen and (max-width: 25.375em) {
+        font-size: 1.2rem;
+        padding: 1.6rem 6rem;
+      }
+
       :hover {
         background: #f57bc8;
         color: #eee;

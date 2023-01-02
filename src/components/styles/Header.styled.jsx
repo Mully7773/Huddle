@@ -14,6 +14,9 @@ export const StyledHeader = styled.header`
   grid-template-rows: 6rem min-content;
   grid-template-columns: repeat(12, 1fr);
   row-gap: 2.8rem;
+  @media only screen and (max-width: 36.875em) {
+    padding: 4rem 2rem;
+  }
   /* svg {
     height: 3.2rem;
     width: 3.2rem;

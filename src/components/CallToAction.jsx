@@ -21,6 +21,10 @@ const StyledCTAContainer = styled.section`
     padding: 6rem 3rem;
   }
 
+  @media only screen and (max-width: 36.875em) {
+    padding: 3rem;
+  }
+
   h2 {
     font-size: 3.2rem;
     font-family: ${({ theme }) => theme.font.headings};
@@ -28,6 +32,14 @@ const StyledCTAContainer = styled.section`
     @media only screen and (max-width: 59.375em) {
       padding-bottom: 2rem;
       font-size: 3.4rem;
+    }
+    @media only screen and (max-width: 36.875em) {
+      padding-bottom: 2rem;
+      font-size: 2.2rem;
+    }
+    @media only screen and (max-width: 25.375em) {
+      padding-bottom: 1rem;
+      font-size: 1.6rem;
     }
   }
 `;

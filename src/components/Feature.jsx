@@ -31,6 +31,9 @@ const StyledFeatureText = styled.div`
     @media only screen and (max-width: 59.375em) {
       font-size: 3.2rem;
     }
+    @media only screen and (max-width: 25.375em) {
+      font-size: 2.4rem;
+    }
   }
 
   & p {
@@ -39,6 +42,9 @@ const StyledFeatureText = styled.div`
     color: ${({ theme }) => theme.color.paragraphCard};
     @media only screen and (max-width: 59.375em) {
       font-size: 2rem;
+    }
+    @media only screen and (max-width: 25.375em) {
+      font-size: 1.4rem;
     }
   }
 `;
