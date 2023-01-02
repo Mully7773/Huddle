@@ -25,6 +25,7 @@ const StyledHeroText = styled.div`
     padding-right: 0;
     padding-top: 4rem;
     text-align: center;
+    align-items: center;
   }
 
   h1 {
@@ -57,6 +58,7 @@ const StyledHeroImages = styled.div`
     @media only screen and (max-width: 59.375em) {
       object-fit: contain;
       padding-top: 4rem;
+      align-items: center;
     }
   }
 `;

@@ -11,6 +11,12 @@ const StyledFeatureText = styled.div`
   grid-column: 1 / 7;
   padding: 0 0 0 5rem;
 
+  @media only screen and (max-width: 59.375em) {
+    grid-column: 1 / -1;
+    padding: 2rem 2rem;
+    text-align: center;
+  }
+
   ${(props) =>
     props.alternate &&
     css`
@@ -22,12 +28,18 @@ const StyledFeatureText = styled.div`
     font-family: ${({ theme }) => theme.font.headings};
     color: #000;
     font-size: 2.6rem;
+    @media only screen and (max-width: 59.375em) {
+      font-size: 3.2rem;
+    }
   }
 
   & p {
     font-family: ${({ theme }) => theme.font.bodyCTA};
     font-size: 1.5rem;
     color: ${({ theme }) => theme.color.paragraphCard};
+    @media only screen and (max-width: 59.375em) {
+      font-size: 2rem;
+    }
   }
 `;
 
@@ -39,12 +51,23 @@ const StyledFeatureImage = styled.img`
   grid-column: 8 / -1;
   padding: 2rem;
 
+  @media only screen and (max-width: 59.375em) {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    object-fit: contain;
+  }
+
   ${(props) =>
     props.alternate &&
     css`
       grid-column: 1 / 7;
       grid-row: 1 / 2;
       padding-left: 5rem;
+      @media only screen and (max-width: 59.375em) {
+        padding-left: 2rem;
+        padding-bottom: 5rem;
+        padding-top: 4rem;
+      }
     `}
 `;
 const Feature = () => {
