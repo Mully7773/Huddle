@@ -2,6 +2,7 @@ import { StyledFeature } from "./styles/Feature.styled";
 import { cardData } from "../cardData";
 import styled from "styled-components";
 import { css } from "styled-components";
+import { useInView } from "react-intersection-observer";
 
 const StyledFeatureText = styled.div`
   display: flex;
@@ -76,7 +77,7 @@ const StyledFeatureImage = styled.img`
       }
     `}
 `;
-const Feature = () => {
+const Feature = (props) => {
   const featureList = cardData.map((feature, index) => (
     <StyledFeature key={feature.id}>
       <StyledFeatureText alternate={index % 2 !== 0}>
