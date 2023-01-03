@@ -2,7 +2,7 @@ import { StyledFeature } from "./styles/Feature.styled";
 import { cardData } from "../cardData";
 import styled from "styled-components";
 import { css } from "styled-components";
-import { useInView } from "react-intersection-observer";
+import { InView, useInView } from "react-intersection-observer";
 
 const StyledFeatureText = styled.div`
   display: flex;
@@ -77,15 +77,27 @@ const StyledFeatureImage = styled.img`
       }
     `}
 `;
-const Feature = (props) => {
+const Feature = () => {
   const featureList = cardData.map((feature, index) => (
-    <StyledFeature key={feature.id}>
-      <StyledFeatureText alternate={index % 2 !== 0}>
-        <h2>{feature.cardHeading}</h2>
-        <p>{feature.cardText}</p>
-      </StyledFeatureText>
-      <StyledFeatureImage alternate={index % 2 !== 0} src={feature.cardImg} />
-    </StyledFeature>
+    <InView triggerOnce={true} as="div" onChange={(inView, entry) => inView}>
+      {({ inView, ref, entry }) => (
+        <StyledFeature
+          alternate={index % 2 !== 0}
+          inView={inView}
+          ref={ref}
+          key={feature.id}
+        >
+          <StyledFeatureText alternate={index % 2 !== 0}>
+            <h2>{feature.cardHeading}</h2>
+            <p>{feature.cardText}</p>
+          </StyledFeatureText>
+          <StyledFeatureImage
+            alternate={index % 2 !== 0}
+            src={feature.cardImg}
+          />
+        </StyledFeature>
+      )}
+    </InView>
   ));
 
   return <>{featureList}</>;

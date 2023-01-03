@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const StyledGridContainer = styled.div`
+  overflow: hidden;
   display: grid;
   grid-template-rows: 100vh min-content min-content min-content;
   grid-template-columns:

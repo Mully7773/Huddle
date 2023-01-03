@@ -17,6 +17,7 @@ const GlobalStyles = createGlobalStyle`
     html {
         box-sizing: border-box;
         font-size: 62.5%;
+
         
         @media only screen and (max-width: 68.75em) {
     font-size: 50%;
@@ -28,6 +29,7 @@ const GlobalStyles = createGlobalStyle`
         font-family: var(--font-secondary);
         line-height: 1.6;
         font-weight: 300;
+
     }
 
     ::selection {
