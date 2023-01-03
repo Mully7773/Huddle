@@ -79,14 +79,14 @@ const StyledFeatureImage = styled.img`
 `;
 const Feature = () => {
   const featureList = cardData.map((feature, index) => (
-    <InView triggerOnce={true} as="div" onChange={(inView, entry) => inView}>
+    <InView
+      key={feature.id}
+      triggerOnce={true}
+      as="div"
+      onChange={(inView, entry) => inView}
+    >
       {({ inView, ref, entry }) => (
-        <StyledFeature
-          alternate={index % 2 !== 0}
-          inView={inView}
-          ref={ref}
-          key={feature.id}
-        >
+        <StyledFeature alternate={index % 2 !== 0} inView={inView} ref={ref}>
           <StyledFeatureText alternate={index % 2 !== 0}>
             <h2>{feature.cardHeading}</h2>
             <p>{feature.cardText}</p>
