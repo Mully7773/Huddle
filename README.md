@@ -4,13 +4,27 @@ A mobile responsive landing page for a fictional messaging company called 'Huddl
 
 ## Link
 
-See it here:
+See it here: https://huddle-nickm.netlify.app/
 
 ## Screenshots
 
+![Screenshot header - desktop](./src/assets/screenshots/desktop-header.png)
+
+<br>
+
+![Screenshot features - desktop](./src/assets/screenshots/desktop-features.png)
+
+<br>
+
+![Screenshot footer - desktop](./src/assets/screenshots/desktop-footer.png)
+<br>
+
+![Screenshot header - mobile](./src/assets/screenshots/mobile-header.png)
+<br>
+
 ## Description
 
-This is a simple landing page from Frontend Mentor I built entirely using React, Styled Components, and the React Intersection Observer API. You can view more information about this challenge [here](https://www.frontendmentor.io/challenges/huddle-landing-page-with-alternating-feature-blocks-5ca5f5981e82137ec91a5100) My goal was to practice using Styled Components to create a nice-looking static landing page using React.
+This is a simple landing page from Frontend Mentor I built entirely using React, Styled Components, and the React Intersection Observer API. You can view more information about this challenge [here](https://www.frontendmentor.io/challenges/huddle-landing-page-with-alternating-feature-blocks-5ca5f5981e82137ec91a5100) My goal was to practice using Styled Components along with CSS Grid to create a nice-looking static landing page with React.
 
 ## Features
 
